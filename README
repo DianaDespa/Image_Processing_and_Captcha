@@ -1,6 +1,4 @@
-Despa Diana-Alexandra 311CA
-
-MN - Tema 1 - Procesare de imagine. Captcha
+Procesare de imagine. Captcha
 
 Task 1.1
 	Functia "rgb2gray" se foloseste de formula data pentru a calcula intesitatea pixelului din matricea de output ce corespunde celui din matricea color, data ca input.
