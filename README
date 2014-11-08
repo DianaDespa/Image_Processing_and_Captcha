@@ -1,0 +1,23 @@
+Despa Diana-Alexandra 311CA
+
+MN - Tema 1 - Procesare de imagine. Captcha
+
+Task 1.1
+	Functia "rgb2gray" se foloseste de formula data pentru a calcula intesitatea pixelului din matricea de output ce corespunde celui din matricea color, data ca input.
+	
+Task 1.2
+	Functia "histogram" calculeaza si stocheaza in vectorul h, pentru fiecare valoare posibila a intensitatii unui pixel numarul de aparitii ale acesteia in matricea imaginii, folosindu-se de functia predefinita "find".
+	
+Task 1.3
+	Functia "brightness" modifica cu valoarea x intensitatea fiecarui pixel, apoi, cu functia "find" gaseste indicii pixelilor care nu se incadreaza in intervalul [0, 255] si le modifica intensitatea in modul corespunzator. Functia intoarce media aritmetica a valorilor din noua matrice a imaginii, apeland de 2 ori functia predefinita "mean"(media mediilor de pe coloane).
+	
+Task 2
+	Functia "salt_pepper" gaseste coordonatele pixelilor afectati de zgomot din matricea masca, utilizand "find". Apoi, pentru fiecare, calculeaza media pixelilor din jur cu formula: suma tuturor elementelor din patratul de dimensiune 3x3 cu pixelul defect in centru, impartita la 8.
+
+Task 3
+	Functia "captcha" utilizeaza sume de control pentru identificarea literelor din imagine. Aceste sume au fost precalculate cu functiile "sum_ctrl" si "sums_arr", fiecare imagine din "letter_samples" avand o suma caracteristica unica, apoi vectorul cu sumele si codurile ascii corespunzatoare literelor respective au fost scrise in fisierul "sums_array.m". Acest fisier este incarcat la inceputul functiei "captcha" in matricea sume_control.
+	Programul cauta in imaginea convertita in binar coloanele de 1, adica coloanele albe din imagine, si extrage literele cuprinse intre 2 coloane albe consecutive. Apoi elimina liniile albe de deasupra si de sub litera, se calculeaza suma de control si se identifica litera care ii corespunde, aceasta din urma fiind adaugata la sirul de caractere.
+	
+Alte comentarii
+	Mi s-a parut foarte interesanta aceasta tema si foarte buna ideea testelor suplimentare pentru verificarea eficientei algoritmului. Suma de control pentru "captcha" a dat ceva batai de cap, deoarece a durat ceva timp sa gasesc o formula pentru care sa nu am coliziuni. 
+	Mi-a placut sa invat despre vectorizare si mai ales despre cum sa imbunatatesc eficienta programului in ceea ce priveste timpul de executie. Sper ca si temele viitoare sa fie cel putin la fel de "challenging", dar nu neaparat ca dificultate, ci ca inventivitate, eventual in scopul obtinerii unui bonus de punctaj.
