@@ -15,7 +15,3 @@ Task 2
 Task 3
 	Functia "captcha" utilizeaza sume de control pentru identificarea literelor din imagine. Aceste sume au fost precalculate cu functiile "sum_ctrl" si "sums_arr", fiecare imagine din "letter_samples" avand o suma caracteristica unica, apoi vectorul cu sumele si codurile ascii corespunzatoare literelor respective au fost scrise in fisierul "sums_array.m". Acest fisier este incarcat la inceputul functiei "captcha" in matricea sume_control.
 	Programul cauta in imaginea convertita in binar coloanele de 1, adica coloanele albe din imagine, si extrage literele cuprinse intre 2 coloane albe consecutive. Apoi elimina liniile albe de deasupra si de sub litera, se calculeaza suma de control si se identifica litera care ii corespunde, aceasta din urma fiind adaugata la sirul de caractere.
-	
-Alte comentarii
-	Mi s-a parut foarte interesanta aceasta tema si foarte buna ideea testelor suplimentare pentru verificarea eficientei algoritmului. Suma de control pentru "captcha" a dat ceva batai de cap, deoarece a durat ceva timp sa gasesc o formula pentru care sa nu am coliziuni. 
-	Mi-a placut sa invat despre vectorizare si mai ales despre cum sa imbunatatesc eficienta programului in ceea ce priveste timpul de executie. Sper ca si temele viitoare sa fie cel putin la fel de "challenging", dar nu neaparat ca dificultate, ci ca inventivitate, eventual in scopul obtinerii unui bonus de punctaj.
